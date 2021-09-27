@@ -10,6 +10,8 @@ public class MethodTesting {
 	public static double calcPyramidVolume(double baseLength, double baseWidth, double pyramidHeight) {
 		return calcBaseArea(baseLength, baseWidth) * pyramidHeight * (double)1/3;
 		}
+	
+	
 
 	public static void main (String [] args) {
 	Scanner scnr = new Scanner(System.in);
