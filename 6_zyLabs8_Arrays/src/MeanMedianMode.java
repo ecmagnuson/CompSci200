@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class MeanMedianMode {
     
@@ -36,9 +35,8 @@ public class MeanMedianMode {
     public static void main(String[] args) {
         
         double[] list = {1,2,3,4,5,6,7,8,9,10};
+        
         System.out.println("Mean is: " + mean(list));
-        
         System.out.println("Median is: " + median(list));
-        
     }
 }

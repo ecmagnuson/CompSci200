@@ -43,9 +43,12 @@ public class Age {
         int[] personAge = person.getAge();
         int[] currentDate = getCurrentDate();
         
+        int ageMonth = currentDate[0] - personAge[0];
+        int ageDays = currentDate[1] - personAge[1];
+        int ageYears = currentDate[2] - personAge[2];
         
-        
-        
+        System.out.println("I am: " + ageYears + " years old.");
+        System.out.println("I've been " + ageYears + " for " + ageMonth + " months" + " and " + ageDays + " days.");
         
     }
 }

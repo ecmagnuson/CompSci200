@@ -1,23 +1,6 @@
 package zyLabsChapter6;
-//Commented out package so it will compile on zyLabs
 
 import java.util.Scanner;
-
-///////////////////////// TOP OF FILE COMMENT BLOCK ////////////////////////////
-//
-//Title:          Refactoring the calendar.java program from zyLabs Chapter 6. Creating a calandar from user input of year, month, day.
-//Course:         CS200 F21
-//
-//Author:          Elliott Magnuson
-//Email:           ecmagnuson@wisc.edu
-//Lecturer's Name: Jim Williams
-//
-///////////////////////////////// CITATIONS ////////////////////////////////////
-//
-//None were used.
-//
-//
-/////////////////////////////// 80 COLUMNS WIDE ////////////////////////////////
 
 /**
  * This class contains the entire program to print out a calendar and find the

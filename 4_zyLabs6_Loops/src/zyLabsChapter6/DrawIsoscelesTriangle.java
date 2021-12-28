@@ -1,63 +1,46 @@
 package zyLabsChapter6;
 
-import java.util.Scanner; 
-
-///////////////////////// TOP OF FILE COMMENT BLOCK ////////////////////////////
-//
-//Title:           Printing an isosceles triangle.
-//Course:          CS200 F21
-//
-//Author:          Elliott Magnuson
-//Email:           ecmagnuson@wisc.edu
-//Lecturer's Name: Jim Williams
-//
-///////////////////////////////// CITATIONS ////////////////////////////////////
-//
-//None.
-//
-//
-/////////////////////////////// 80 COLUMNS WIDE ////////////////////////////////
+import java.util.Scanner;
 
 public class DrawIsoscelesTriangle {
-   public static void main(String[] args) {
-      
-	  Scanner scnr = new Scanner(System.in);
-      int triangleHeight = 0;
+    
+    public static void main(String[] args) {
 
-      int i = 0;
-      int j = 0;
+        Scanner scnr = new Scanner(System.in);
+        int triangleHeight = 0;
 
-      
-      while (true) {
-    	  System.out.print("Enter triangle height: ");
-    	  triangleHeight = scnr.nextInt();
-    	  if (triangleHeight > 0 && triangleHeight % 2 == 1) {
-    		  break;
-    	  }
-    	  continue;
-      }
-      
-      System.out.println();
-      System.out.println();
+        int i = 0;
+        int j = 0;
 
-      for (i = 1; i <= triangleHeight; i++) {
-    	  for (j = 0; j < i; j++) {
-    		  System.out.print("*");
-    	  } 
-    	  System.out.println();
-    	  
-      }
-      
+        while (true) {
+            System.out.print("Enter triangle height: ");
+            triangleHeight = scnr.nextInt();
+            if (triangleHeight > 0 && triangleHeight % 2 == 1) {
+                break;
+            }
+            System.out.println("Enter an odd number");
+            continue;
+        }
 
-      for (int k = triangleHeight - 1; k >= 1; k--) {
-			for (int y = 0; y<k; y++ ) {
-				System.out.print("*" + "");
-			}
-			System.out.println();
-      }
+        System.out.println();
+        System.out.println();
 
-      return;
-   
+        for (i = 1; i <= triangleHeight; i++) {
+            for (j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+
+        for (int k = triangleHeight - 1; k >= 1; k--) {
+            for (int y = 0; y < k; y++) {
+                System.out.print("*" + "");
+            }
+            System.out.println();
+        }
+
+        return;
+
+    }
 }
-}
-

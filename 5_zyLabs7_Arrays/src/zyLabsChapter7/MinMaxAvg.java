@@ -1,14 +1,16 @@
 package zyLabsChapter7;
+
 import java.util.Scanner;
 
 public class MinMaxAvg {
+    
    public static void main(String[] args) {
+       
       Scanner scnr = new Scanner(System.in);
       
       int[] userValues = new int[10];
-      int i;
       
-      for (i = 0; i < 10; ++i) {
+      for (int i = 0; i < userValues.length; ++i) {
          userValues[i] = scnr.nextInt();
       }
       
