@@ -32,7 +32,6 @@ public class MinMaxAverage {
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
-        
         return sum/array.length;
     }
 
@@ -46,10 +45,11 @@ public class MinMaxAverage {
         
         for (int i = 0, x = 0; i < list.length; i++) {
             if (list[i] != min && list[i] != max) {
+                //I don't understand why this with x++ works..
+                //If I just put i there it will skip filling the array at the index of min or max
                 remaining[x++] = list[i];
             }
         }
-        
         System.out.println("Average of remaining is " + average(remaining));
     }
 }
