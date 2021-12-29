@@ -32,6 +32,8 @@ public class MeanMedianMode {
         return sum(twoMedianNums)/twoMedianNums.length;
     }
     
+    //TODO mode with hashmaps
+    
     public static void main(String[] args) {
         
         double[] list = {1,2,3,4,5,6,7,8,9,10};

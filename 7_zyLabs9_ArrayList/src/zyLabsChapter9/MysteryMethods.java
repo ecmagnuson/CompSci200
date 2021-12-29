@@ -1,21 +1,4 @@
-///////////////////////// TOP OF FILE COMMENT BLOCK ////////////////////////////
-//
-// Title:           Working with char arrays: swapping indices, reversing, counting chars
-// Course:          CS 200
-//
-// Author:          Elliott Magnuson
-// Email:           ecmagnuson@wisc.edu
-// Lecturer's Name: Jim Williams
-//
-///////////////////////////////// CITATIONS ////////////////////////////////////
-//
-//None were used.
-//
-//
-//
-//
-//
-/////////////////////////////// 80 COLUMNS WIDE ////////////////////////////////
+package zyLabsChapter9;
 
 /**
  * This class is a program that creates a char array and manipulates it by

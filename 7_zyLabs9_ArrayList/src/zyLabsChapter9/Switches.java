@@ -1,3 +1,5 @@
+package zyLabsChapter9;
+
 import java.util.ArrayList;
 
 public class Switches {
@@ -5,9 +7,12 @@ public class Switches {
     // -s space separated
     // -r reverse order
     public static void main(String[] args) {
+        
         ArrayList<String> remainingArgs = new ArrayList<>();
+        
         boolean space = false;
         boolean reverse = false;
+        
         for (String arg : args) {
             if (arg.equals("-s")) {
                 space = true;
@@ -17,6 +22,7 @@ public class Switches {
                 remainingArgs.add(arg);
             }
         }
+        
         if (reverse) {
             for (int i = remainingArgs.size() - 1; i >= 0; i--) {
                 if (space) {
@@ -25,6 +31,7 @@ public class Switches {
                     System.out.print(remainingArgs.get(i));
                 }
             }
+            
         } else {
             for (String value : remainingArgs) {
                 if (space) {

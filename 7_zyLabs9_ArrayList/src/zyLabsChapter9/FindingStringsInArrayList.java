@@ -25,11 +25,6 @@ public class FindingStringsInArrayList {
                 items.remove("oreo");
             }
         }
-        
-        //Iterate through list to print out
-        for (int i = 0; i < items.size(); i++) {
-            System.out.print(items.get(i) + " ");
-        }
+        System.out.println(items);
     }
-
 }

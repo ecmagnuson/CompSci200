@@ -78,6 +78,7 @@ public class WeekendOrders {
     
     
     public static void main(String[] args) {
+        
         // DO NOT MODIFY THIS LINE
         // CHANGING THE SEED WILL CREATE DIFFERENT RESULTS THAN OUR TEST FUNCTIONS
         final int SEED = 1;
@@ -96,9 +97,7 @@ public class WeekendOrders {
         }
         
         addOrders(3, orders, rand);
-
-        
+   
         return;
      }
-
 }

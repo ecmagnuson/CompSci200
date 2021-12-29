@@ -1,23 +1,4 @@
 package zyLabsChapter9;
-///////////////////////// TOP OF FILE COMMENT BLOCK ////////////////////////////
-//
-// Title:           Working with array lists
-// Course:          CS 200
-//
-// Author:          Elliott Magnuson
-// Email:           ecmagnuson@wisc.edu
-// Lecturer's Name: Jim Williams
-//
-///////////////////////////////// CITATIONS ////////////////////////////////////
-//
-//None were used.
-//
-//
-//
-//
-//
-/////////////////////////////// 80 COLUMNS WIDE ////////////////////////////////
-
 
 import java.util.Random;
 import java.util.ArrayList;
@@ -50,7 +31,7 @@ public class GradeAnalyzer {
      * @return the minimum element in the ArrayList; -1 if it is null; or 0 if the
      *         ArrayList is empty.
      */
-    public static int findMinScore(ArrayList<Integer> grades) {
+    public static int getMin(ArrayList<Integer> grades) {
 
         int minScore = 100;
 
@@ -71,21 +52,17 @@ public class GradeAnalyzer {
     }
 
     /**
-     * This method calculates an average over all the scores in the ArrayList.
-     * 
-     * Note: The return value should include decimals. Make sure to use double
-     * division instead of integer division.
+     * This method calculates an average over all the scores in the ArrayList
      * 
      * @param grades the ArrayList of all scores
      * @return the average over all the elements in the ArrayList; -1 if the
      *         ArrayList is null or empty;
      */
-    public static double calcAverageScore(ArrayList<Integer> grades) {
+    public static double calcAvg(ArrayList<Integer> grades) {
 
         if (grades == null || grades.isEmpty()) {
             return -1;
         }
-
         // calculate the average score of the values in grades.
         // sum then divide by length.
         // Python has really nice included functions for this stuff, im sure i could
@@ -151,7 +128,6 @@ public class GradeAnalyzer {
         if (grades == null || grades.isEmpty()) {
             return null;
         }
-        
         //populate this array list with indices of people that got 100% on the grades array list.
         ArrayList<Integer> fullMarks = new ArrayList<Integer>();
         
@@ -159,32 +135,31 @@ public class GradeAnalyzer {
             if (grades.get(i) == gradeToFind) {
                 fullMarks.add(i);
             }
-        }
-        
+        }  
         return fullMarks;
     }
     
 
     public static void main(String[] args) {
-        ArrayList<Integer> grades = new ArrayList<Integer>();
-        Random rand = new Random(Config.SEED);
         
-        for (int i = 0; i < Config.NUM_STUDENTS; i++) {
+        ArrayList<Integer> grades = new ArrayList<Integer>();
+        Random rand = new Random(1);
+        
+        for (int i = 0; i < 500; i++) {
             addGrade(grades, rand);
         }
 
-        int minScore = findMinScore(grades);
+        int minScore = getMin(grades);
         System.out.println("The lowest score in this class is: " + minScore);
 
-        double aveScore = calcAverageScore(grades);
+        double aveScore = calcAvg(grades);
         System.out.println("The average score in this class is: " + aveScore);
 
-        double failingRate = calcPercentageBelow(grades, 60);
-        System.out.println("The percentage of students below 60 is: " + failingRate + "%");
+        int target = 50;
+        double failingRate = calcPercentageBelow(grades, target);
+        System.out.println("The percentage of students below " + target  + " is: " + failingRate + "%");
 
         ArrayList<Integer> studentIndices = findStudentsWithGrade(grades, 100);
         System.out.println("Here are the IDs of students who got full marks: " + studentIndices);
-
     }
-
 }

@@ -1,46 +1,9 @@
 package zyLabsChapter9;
-///////////////////////// TOP OF FILE COMMENT BLOCK ////////////////////////////
-//
-// Title:           Learning java array lists. removing, adding, swapping
-// Course:          CS 200
-//
-// Author:          Elliott Magnuson
-// Email:           ecmagnuson@wisc.edu
-// Lecturer's Name: Jim Williams
-//
-///////////////////////////////// CITATIONS ////////////////////////////////////
-//
-//None were used.
-//
-//
-//
-//
-//
-/////////////////////////////// 80 COLUMNS WIDE ////////////////////////////////
-//
-// Title:           descriptive title of the program making use of this file
-// Course:          course number, term, and year
-//
-// Author:          your name
-// Email:           your @wisc.edu email address
-// Lecturer's Name: name of your lecturer
-//
-///////////////////////////////// CITATIONS ////////////////////////////////////
-//
-// Source or Recipient; Description
-// Examples:
-// Jane Doe; helped me with for loop in reverse method
-// https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html; 
-//         counting for loop
-// John Doe; I helped with switch statement in main method.
-//
-/////////////////////////////// 80 COLUMNS WIDE ////////////////////////////////
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ShoppingList {
-
     /**
      * test for calculatePayment()
      * 

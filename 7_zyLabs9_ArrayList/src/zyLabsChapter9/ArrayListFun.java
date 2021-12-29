@@ -1,22 +1,4 @@
-//package zyLabsChapter9;
-///////////////////////// TOP OF FILE COMMENT BLOCK ////////////////////////////
-//
-//Title:           Working with array lists
-//Course:          CS 200
-//
-//Author:          Elliott Magnuson
-//Email:           ecmagnuson@wisc.edu
-//Lecturer's Name: Jim Williams
-//
-///////////////////////////////// CITATIONS ////////////////////////////////////
-//
-//None were used.
-//
-//
-//
-//
-//
-/////////////////////////////// 80 COLUMNS WIDE ////////////////////////////////
+package zyLabsChapter9;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -97,12 +79,10 @@ public class ArrayListFun {
           *  for (int i = 0; i < c.length; i++) {
           *      runningSum += c[i];
           *  }
-	      */
-        
+	      */     
 	    if (runningSum == 0) {
 	        return true;
 	    }
-	    
 		return false;
 	}
 		
@@ -127,12 +107,9 @@ public class ArrayListFun {
 	            return true;
 	        }
 	    }
-
 		return false;
 	}
-	// input = ['m', 'a', 'm', 'a'] and pattern = ['m', 'a']
-	// true
-	
+
 	/**
 	 * Returns whether all the integers in the input list are perfect squares.
 	 * Hint: Use Math.sqrt and Math.floor function to find the square root of the number has a non-zero fractional part.
@@ -148,11 +125,16 @@ public class ArrayListFun {
 	
 	public static void main(String[] args) {
 	    
-	    ArrayList<Character> input = new ArrayList<>(Arrays.asList('m','a','m','a','d'));
-	    ArrayList<Character> pattern = new ArrayList<>(Arrays.asList('m','a'));
+	    ArrayList<Integer> numList = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
+	    System.out.println(countOccurencesInRange(numList,1,6));
 	    
+	    ArrayList<Integer> a = new ArrayList<>(Arrays.asList(1, 1, -1, -1));
+	    ArrayList<Integer> b = new ArrayList<>(Arrays.asList(-1, -1, -1, -1));
+	    System.out.println(isOrthogonal(a, b));
 	    
-	    System.out.println(isRepeated(input, pattern));
-	    
+	    //this doesn't work.
+        ArrayList<Character> input = new ArrayList<>(Arrays.asList('m','a', 'd', 'm','a','d'));
+        ArrayList<Character> pattern = new ArrayList<>(Arrays.asList('m', 'a'));
+        System.out.println(isRepeated(input, pattern));
 	}
 }
